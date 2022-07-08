@@ -1,0 +1,24 @@
+{
+  "name": "202207-w1chwe-carlos-santos-ramon-trepat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass scss/index.scss css/styles.css",
+    "watch": "sass --watch scss/index.scss css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rtrepis/202207-w1chwe-carlos-santos-ramon-trepat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rtrepis/202207-w1chwe-carlos-santos-ramon-trepat/issues"
+  },
+  "homepage": "https://github.com/rtrepis/202207-w1chwe-carlos-santos-ramon-trepat#readme",
+  "dependencies": {
+    "sass": "^1.53.0"
+  }
+}
