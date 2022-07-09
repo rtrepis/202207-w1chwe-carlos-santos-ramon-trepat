@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass scss/index.scss css/styles.css",
-    "watch": "sass --watch scss/index.scss css/styles.css"
+    "watch": "sass --watch scss/index.scss css/styles.css",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
   "homepage": "https://github.com/rtrepis/202207-w1chwe-carlos-santos-ramon-trepat#readme",
   "dependencies": {
     "sass": "^1.53.0"
+  },
+  "devDependencies": {
+    "husky": "^8.0.0"
   }
 }
