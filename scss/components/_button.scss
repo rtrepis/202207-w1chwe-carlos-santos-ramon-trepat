@@ -3,6 +3,7 @@
 .button {
   padding: 1rem 2rem;
   color: colors.$white;
+  text-align: center;
   font-weight: 500;
   letter-spacing: 0.1em;
   border: none;
@@ -15,4 +16,16 @@
 
 .button--full {
   width: 100%;
+}
+
+.button--outline {
+  border: 2px solid colors.$white;
+}
+
+.button--uppercase {
+  text-transform: uppercase;
+}
+
+.button--small {
+  font-size: 0.9rem;
 }
