@@ -1,0 +1,21 @@
+@use "../variables/fonts.scss";
+@use "../variables/colors.scss";
+
+.side-search {
+  background-color: colors.$primary-dark;
+  padding: 2rem;
+}
+
+.side-search__title {
+  font-size: fonts.$size-heading-regular;
+  font-weight: 600;
+}
+
+.side-search__input {
+  display: block;
+  width: 100%;
+}
+
+.side-search__label {
+  display: block;
+}
