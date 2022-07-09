@@ -13,5 +13,26 @@
     />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <article class="side-search">
+        <h2 class="side-search__title">Search</h2>
+        <form class="side-search__form">
+          <label for="destination" class="side-search__label"
+            >Destination/property name
+          </label>
+          <input id="destination" type="text" class="side-search__input" />
+          <label for="in-date" class="side-search__label">Check-in date</label>
+          <input id="in-date" type="text" class="side-search__input" />
+          <label for="out-date" class="side-search__label"
+            >Check-out date</label
+          >
+          <input id="out-date" type="text" class="side-search__input" />
+          <label for="travellers" class="side-search__label">Travellers</label>
+          <input id="travellers" type="text" class="side-search__input" />
+          <input type="submit" class="button button--secondary" value="Save" />
+        </form>
+      </article>
+    </div>
+  </body>
 </html>
