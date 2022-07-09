@@ -19,10 +19,9 @@
     "url": "https://github.com/rtrepis/202207-w1chwe-carlos-santos-ramon-trepat/issues"
   },
   "homepage": "https://github.com/rtrepis/202207-w1chwe-carlos-santos-ramon-trepat#readme",
-  "dependencies": {
-    "sass": "^1.53.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "husky": "^8.0.0"
+    "husky": "^8.0.0",
+    "sass": "^1.53.0"
   }
 }
