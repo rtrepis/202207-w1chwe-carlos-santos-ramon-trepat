@@ -4,18 +4,50 @@
 .side-search {
   background-color: colors.$primary-dark;
   padding: 2rem;
+  border-radius: 0.75rem;
 }
 
 .side-search__title {
   font-size: fonts.$size-heading-regular;
   font-weight: 600;
+  color: colors.$primary-light;
+  margin-bottom: 1.5rem;
 }
 
 .side-search__input {
   display: block;
   width: 100%;
+  padding: 1rem 3rem;
+  margin-bottom: 0.5rem;
+  background-color: colors.$white;
+  border: none;
+  border-radius: 0.5rem;
+
+  &::placeholder {
+    color: inherit;
+  }
+
+  &--calendar {
+    background-image: url(../images/calendar-icon.png);
+  }
+
+  &--search {
+    background-image: url(../images/search-icon.png);
+  }
+
+  &--profile {
+    background-image: url(../images/profile-icon.png);
+  }
+
+  &--calendar,
+  &--search,
+  &--profile {
+    background-repeat: no-repeat;
+    background-position: 1rem 45%;
+  }
 }
 
 .side-search__label {
   display: block;
+  color: colors.$white;
 }
