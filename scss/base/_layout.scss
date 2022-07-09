@@ -1,0 +1,11 @@
+@use "../variables/breakpoints";
+
+.container {
+  max-width: breakpoints.$medium;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  @media (min-width: breakpoints.$large) {
+    max-width: breakpoints.$extra-large;
+  }
+}

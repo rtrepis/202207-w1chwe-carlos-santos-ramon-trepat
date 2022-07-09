@@ -1,0 +1,21 @@
+@use "../../scss/variables/colors";
+
+.copyright {
+  &__title {
+    color: colors.$primary;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+
+  &__description {
+    color: colors.$dark;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  &__year {
+    color: colors.$dark;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+}
