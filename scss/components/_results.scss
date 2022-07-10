@@ -1,0 +1,29 @@
+@use "../variables/fonts";
+@use "../variables/breakpoints";
+
+// .result {
+//   @media (min-width: breakpoints.$large) {
+//     & > .container {
+//       margin: padding;
+//     }
+//   }
+// }
+
+.results {
+  @media (min-width: breakpoints.$large) {
+    margin-left: 2rem;
+  }
+}
+
+.results__title {
+  display: inline-block;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  font-size: fonts.$size-large;
+  @media (min-width: breakpoints.$large) {
+    margin-top: 0;
+    font-size: fonts.$size-x-large;
+  }
+}

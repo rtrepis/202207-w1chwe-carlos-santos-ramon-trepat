@@ -5,6 +5,11 @@
 .result {
   @media (min-width: breakpoints.$large) {
     display: flex;
+    border-bottom: 1.5px solid colors.$white-dark;
+
+    &:not(:first-of-type) {
+      margin-top: 2rem;
+    }
   }
 }
 
@@ -16,6 +21,13 @@
   & > *:last-child {
     margin-top: 1rem;
     margin-bottom: 2.2rem;
+  }
+
+  @media (min-width: breakpoints.$large) {
+    border-bottom: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 2rem;
   }
 }
 
