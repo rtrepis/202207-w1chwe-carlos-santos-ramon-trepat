@@ -13,5 +13,8 @@
 .main-aside-wrapper {
   @media (min-width: breakpoints.$large) {
     display: flex;
+    & .container {
+      padding: 0;
+    }
   }
 }
