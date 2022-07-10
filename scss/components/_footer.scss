@@ -1,21 +1,75 @@
 @use "../../scss/variables/colors";
 
+$footer-big: 1.2rem;
+$footer-title: 1rem;
+$footer-size: 0.8rem;
+
+$footer-padding: 10px 0 10px 0;
+
 .copyright {
+  text-align: center;
+  font-weight: 400;
+  font-size: $footer-size;
+
   &__title {
     color: colors.$primary;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: $footer-big;
+    padding: $footer-padding;
   }
 
   &__description {
     color: colors.$dark;
-    font-weight: 400;
-    font-size: 1rem;
+    padding: $footer-padding;
   }
 
   &__year {
     color: colors.$dark;
-    font-weight: 700;
-    font-size: 1rem;
+    padding: $footer-padding;
+  }
+}
+
+.footer-list-items {
+  &--hidden {
+    display: none;
+    visibility: hidden;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: $footer-title;
+    padding: $footer-padding;
+  }
+
+  &__item {
+    color: colors.$dark-light;
+    font-weight: 400;
+    font-size: $footer-size;
+    list-style: none;
+    padding: $footer-padding;
+  }
+}
+
+.footer-contact {
+  color: colors.$dark-light;
+  text-align: center;
+  font-size: $footer-size;
+
+  &__title {
+    font-size: $footer-title;
+    color: colors.$dark;
+    padding: $footer-padding;
+  }
+
+  &__email {
+    color: colors.$primary;
+    padding: $footer-padding;
+  }
+
+  &__address {
+    padding: $footer-padding;
+  }
+
+  &__postal-code {
+    padding: $footer-padding;
   }
 }
