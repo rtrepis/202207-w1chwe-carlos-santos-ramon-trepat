@@ -1,7 +1,7 @@
 @use "../variables/breakpoints";
 
 .container {
-  max-width: breakpoints.$medium;
+  max-width: breakpoints.$medium-large;
   margin: 0 auto;
   padding: 0 2rem;
 
