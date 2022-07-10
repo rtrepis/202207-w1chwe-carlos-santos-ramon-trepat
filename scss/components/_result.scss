@@ -1,0 +1,58 @@
+@use "../variables/colors";
+@use "../variables/fonts";
+
+.result__content {
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 1.5px solid colors.$white-dark;
+
+  & > *:last-child {
+    margin-top: 1rem;
+    margin-bottom: 2.2rem;
+  }
+}
+
+.result__images {
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.result__title {
+  color: colors.$primary;
+  font-size: fonts.$size-large;
+  font-weight: 600;
+}
+
+.result__ratings {
+  margin-bottom: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.result__rating {
+  display: inline;
+  margin-right: 0.1rem;
+  color: colors.$secondary;
+  font-size: 1.3rem;
+}
+
+.result__text {
+  display: block;
+  color: colors.$dark-light;
+  letter-spacing: 0.03em;
+}
+
+.result__localtion-icon {
+  margin-right: 0.5rem;
+  color: colors.$primary-light;
+  font-size: 20px;
+}
+
+.result__location-link {
+  color: colors.$primary;
+  font-size: fonts.$size-medium-large;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
