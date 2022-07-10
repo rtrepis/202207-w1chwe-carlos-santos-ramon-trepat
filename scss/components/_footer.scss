@@ -18,3 +18,28 @@ a:hover {
 a:active {
   text-decoration: none;
 }
+
+.copyright {
+  text-align: center;
+
+  &__title {
+    color: colors.$primary;
+    font-weight: 600;
+    font-size: $footer-big;
+    padding: $footer-padding;
+  }
+
+  &__description {
+    color: colors.$dark;
+    font-weight: 400;
+    font-size: $footer-size;
+    padding: $footer-padding;
+  }
+
+  &__year {
+    color: colors.$dark;
+    font-weight: 700;
+    font-size: $footer-size;
+    padding: $footer-padding;
+  }
+}
