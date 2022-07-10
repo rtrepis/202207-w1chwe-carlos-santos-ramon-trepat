@@ -43,3 +43,24 @@ a:active {
     padding: $footer-padding;
   }
 }
+
+.footer-list-items {
+  &__title {
+    font-weight: 600;
+    font-size: $footer-title;
+    padding: $footer-padding;
+
+    &--hidden {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  &__item {
+    color: colors.$dark-light;
+    font-weight: 400;
+    font-size: $footer-size;
+    list-style: none;
+    padding: $footer-padding;
+  }
+}
