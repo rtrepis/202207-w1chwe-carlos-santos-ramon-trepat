@@ -4,12 +4,20 @@ $footer-big: 1.2rem;
 $footer-title: 1rem;
 $footer-size: 0.8rem;
 
-$footer-padding: 10px 0 10px 0;
+$footer-padding: 15px 0 10px 0;
+
+.container-foot {
+  letter-spacing: 0.1rem;
+  line-height: 1.5rem;
+}
 
 .copyright {
   text-align: center;
   font-weight: 400;
   font-size: $footer-size;
+  padding-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
 
   &__title {
     color: colors.$primary;
@@ -26,10 +34,14 @@ $footer-padding: 10px 0 10px 0;
   &__year {
     color: colors.$dark;
     padding: $footer-padding;
+
+    padding-bottom: 100px;
   }
 }
 
 .footer-list-items {
+  padding-bottom: 50px;
+
   &--hidden {
     display: none;
     visibility: hidden;
@@ -53,6 +65,7 @@ $footer-padding: 10px 0 10px 0;
   color: colors.$dark-light;
   text-align: center;
   font-size: $footer-size;
+  padding-bottom: 50px;
 
   &__title {
     font-size: $footer-title;
