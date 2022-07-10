@@ -1,21 +1,7 @@
 @use "../../scss/variables/colors";
 
-.copyright {
-  &__title {
-    color: colors.$primary;
-    font-weight: 600;
-    font-size: 2rem;
-  }
+$footer-big: 1.2rem;
+$footer-title: 1rem;
+$footer-size: 0.8rem;
 
-  &__description {
-    color: colors.$dark;
-    font-weight: 400;
-    font-size: 1rem;
-  }
-
-  &__year {
-    color: colors.$dark;
-    font-weight: 700;
-    font-size: 1rem;
-  }
-}
+$footer-padding: 20px 0 10px 0;
