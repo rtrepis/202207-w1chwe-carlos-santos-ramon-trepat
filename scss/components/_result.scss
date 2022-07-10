@@ -3,7 +3,7 @@
 @use "../variables/breakpoints";
 
 .result {
-  @media (min-width: breakpoints.$large) {
+  @media (min-width: breakpoints.$extra-large) {
     display: flex;
     border-bottom: 1.5px solid colors.$white-dark;
 
@@ -39,7 +39,7 @@
 }
 
 .result__image--large-hidden {
-  @media (min-width: breakpoints.$large) {
+  @media (min-width: breakpoints.$extra-large) {
     display: none;
   }
 }
