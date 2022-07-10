@@ -1,10 +1,15 @@
 @use "../variables/fonts";
 @use "../variables/colors";
+@use "../variables/breakpoints";
 
 .side-search {
   background-color: colors.$primary-dark;
   padding: 2rem;
   border-radius: 0.75rem;
+
+  @media (min-width: breakpoints.$large) {
+    max-width: breakpoints.$small;
+  }
 }
 
 .side-search__title {
