@@ -12,6 +12,13 @@
   }
 }
 
+.result__images {
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
 .result__title {
   color: colors.$primary;
   font-size: fonts.$size-large;
@@ -20,9 +27,12 @@
 
 .result__ratings {
   margin-bottom: 1rem;
+  padding: 0;
+  list-style: none;
 }
 
 .result__rating {
+  display: inline;
   margin-right: 0.1rem;
   color: colors.$secondary;
   font-size: 1.3rem;
