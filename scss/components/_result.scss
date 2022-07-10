@@ -24,10 +24,16 @@
   }
 
   @media (min-width: breakpoints.$large) {
+    position: relative;
     border-bottom: none;
     margin-top: 0;
-    margin-bottom: 0;
     margin-left: 2rem;
+
+    & > *:last-child {
+      position: absolute;
+      top: -1rem;
+      right: 0;
+    }
   }
 }
 
