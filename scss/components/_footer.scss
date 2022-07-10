@@ -1,17 +1,25 @@
 @use "../../scss/variables/colors";
 @use "../../scss/variables/fonts";
+@use "../../scss/variables/breakpoints";
 
-$footer-padding: 15px 0 10px 0;
+$footer-padding: 15px 25px 10px 20px;
 
 .container-foot {
   letter-spacing: 0.1rem;
   line-height: 1.5rem;
+  text-align: center;
+
+  @media (min-width: breakpoints.$large) {
+    display: flex;
+    text-align: left;
+  }
 }
 
 .copyright {
-  text-align: center;
+  flex: 1.5;
+
   font-weight: 400;
-  font-size: $footer-size;
+  font-size: fonts.$size-medium;
   padding-bottom: 50px;
   padding-left: 30px;
   padding-right: 30px;
@@ -32,20 +40,32 @@ $footer-padding: 15px 0 10px 0;
     color: colors.$dark;
     padding: $footer-padding;
     padding-bottom: 100px;
+
+    @media (min-width: breakpoints.$large) {
+      font-weight: 700;
+    }
   }
 }
 
 .footer-list-items {
+  flex: 1;
   padding-bottom: 50px;
 
-  &--hidden {
-    display: none;
-    visibility: hidden;
+  @media (max-width: breakpoints.$large) {
+    &--hidden {
+      display: none;
+      visibility: hidden;
+    }
   }
+
   &__title {
     font-weight: 600;
     font-size: fonts.$size-medium-large;
     padding: $footer-padding;
+  }
+
+  &__items {
+    padding-inline-start: 10px;
   }
 
   &__item {
@@ -58,6 +78,7 @@ $footer-padding: 15px 0 10px 0;
 }
 
 .footer-contact {
+  flex: 1;
   color: colors.$dark-light;
   text-align: center;
   font-size: fonts.$size-medium;
