@@ -1,5 +1,12 @@
 @use "../variables/colors";
 @use "../variables/fonts";
+@use "../variables/breakpoints";
+
+.result {
+  @media (min-width: breakpoints.$large) {
+    display: flex;
+  }
+}
 
 .result__content {
   margin-top: 1rem;
@@ -17,6 +24,12 @@
   gap: 1rem;
   padding: 0;
   list-style: none;
+}
+
+.result__image--large-hidden {
+  @media (min-width: breakpoints.$large) {
+    display: none;
+  }
 }
 
 .result__title {
