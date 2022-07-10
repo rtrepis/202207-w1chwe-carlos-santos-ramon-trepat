@@ -6,6 +6,10 @@
   background-color: colors.$primary-dark;
   padding: 2rem;
   border-radius: 0.75rem;
+
+  & :last-child {
+    margin-top: 1rem;
+  }
 }
 
 .side-search__title {
