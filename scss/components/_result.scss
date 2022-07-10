@@ -1,0 +1,26 @@
+@use "../variables/colors";
+@use "../variables/fonts";
+
+.result__title {
+  color: colors.$primary;
+  font-size: fonts.$size-large;
+  font-weight: 600;
+}
+
+.result__text {
+  display: block;
+  color: colors.$dark-light;
+  letter-spacing: 0.03em;
+}
+
+.result__localtion-icon {
+  margin-right: 0.5rem;
+  color: colors.$primary-light;
+  font-size: 20px;
+}
+
+.result__location-link {
+  color: colors.$primary;
+  font-size: fonts.$size-medium-large;
+  font-weight: 600;
+}
