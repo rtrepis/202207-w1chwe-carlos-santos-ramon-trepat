@@ -1,20 +1,17 @@
 @use "../../scss/variables/colors";
-
-$footer-big: 1.2rem;
-$footer-title: 1rem;
-$footer-size: 0.8rem;
+@use "../../scss/variables/fonts";
 
 $footer-padding: 10px 0 10px 0;
 
 .copyright {
   text-align: center;
   font-weight: 400;
-  font-size: $footer-size;
+  font-size: fonts.$size-medium;
 
   &__title {
     color: colors.$primary;
     font-weight: 600;
-    font-size: $footer-big;
+    font-size: fonts.$size-xx-large;
     padding: $footer-padding;
   }
 
@@ -36,14 +33,14 @@ $footer-padding: 10px 0 10px 0;
   }
   &__title {
     font-weight: 600;
-    font-size: $footer-title;
+    font-size: fonts.$size-medium-large;
     padding: $footer-padding;
   }
 
   &__item {
     color: colors.$dark-light;
     font-weight: 400;
-    font-size: $footer-size;
+    font-size: fonts.$size-medium;
     list-style: none;
     padding: $footer-padding;
   }
@@ -52,10 +49,10 @@ $footer-padding: 10px 0 10px 0;
 .footer-contact {
   color: colors.$dark-light;
   text-align: center;
-  font-size: $footer-size;
+  font-size: fonts.$size-medium;
 
   &__title {
-    font-size: $footer-title;
+    font-size: fonts.$size-medium-large;
     color: colors.$dark;
     padding: $footer-padding;
   }
