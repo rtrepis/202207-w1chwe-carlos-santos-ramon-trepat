@@ -23,6 +23,10 @@
       ),
       linear-gradient(347deg, transparent 58%, colors.$primary-light 58%),
       colors.$primary;
+
+    & .button {
+      width: auto;
+    }
   }
 
   &::after {
@@ -39,10 +43,6 @@
 
   & > * {
     z-index: 2;
-  }
-
-  & .button {
-    width: auto;
   }
 }
 
