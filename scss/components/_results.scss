@@ -1,4 +1,5 @@
 @use "../variables/fonts";
+@use "../variables/colors";
 @use "../variables/breakpoints";
 
 // .result {
@@ -10,8 +11,49 @@
 // }
 
 .results {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 6rem;
+    height: 2px;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  &::after {
+    content: "\f107";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    bottom: -1.5rem;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: colors.$primary;
+    font-size: 1.5rem;
+    border: 2px solid colors.$primary;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
   @media (min-width: breakpoints.$extra-large) {
     margin-left: 2rem;
+
+    &::after {
+      content: none;
+    }
   }
 }
 
